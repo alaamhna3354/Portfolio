@@ -29,6 +29,9 @@ export default {
       {
         src: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",
       },
+      {
+        src: "https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js",
+      },
     ],
   },
 

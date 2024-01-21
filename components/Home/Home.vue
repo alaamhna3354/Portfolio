@@ -1,5 +1,9 @@
 <template>
-  <main class="main-body p-0">
+  <main class="main-body p-0" id="ripple">
+    <Blur :width="`100%`" :height="`20px`" :top="'-5px'" />
+    <Blur :width="`100%`" :height="`10px`" :bottom="'-5px'" />
+    <Blur :height="`100%`" :width="`10px`" :left="'0'" />
+    <Blur :height="`100%`" :width="`10px`" :right="'0'" />
     <!-- MyInfo components  -->
     <MyInfo />
     <!-- About components  -->
@@ -31,6 +35,7 @@ import Services from "./Services.vue";
 import Projects from "./Projects.vue";
 import Resume from "./Resume.vue";
 import Contact from "./Contact";
+import Blur from "./Blur";
 export default {
   data() {
     return {};
@@ -41,12 +46,20 @@ export default {
     About,
     Projects,
     Resume,
+    Blur,
     Contact
   },
 
   methods: {},
   computed: {},
-  created() {},
+  mounted() {
+    const el = $("#ripple");
+  el.ripples({
+    resolution: 512,
+    dropRadius: 20,
+    perturbance: 0.01,
+  });
+  },
 };
 </script>
 <style lang="scss" scoped>

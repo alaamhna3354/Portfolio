@@ -10,13 +10,13 @@
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-3">
+        <!-- <div class="col-md-4 mb-3">
           <a target="_blank" href="https://acacia-trading.com/">
             <div class="item">
               <img src="../../public/img/Acacia-Home.png" alt="" />
             </div>
           </a>
-        </div>
+        </div> -->
         <div class="col-md-4 mb-3">
           <a target="_blank" href="https://academian.co.uk/">
             <div class="item">
@@ -25,7 +25,7 @@
           </a>
         </div>
         <div class="col-md-4 mb-3">
-          <a target="_blank" href="http://front.e-dalely.com/">
+          <a target="_blank" href="https://t-coda.com/">
             <div class="item">
               <img src="../../public/img/E-Dalily.png" alt="" />
             </div>
@@ -38,13 +38,13 @@
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-3">
+        <!-- <div class="col-md-4 mb-3">
           <a target="_blank" href="http://mfconline.me/">
             <div class="item">
               <img src="../../public/img/Family-Care.png" alt="" />
             </div>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
   </main>

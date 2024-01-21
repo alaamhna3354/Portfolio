@@ -69,7 +69,7 @@
                         yr 4 mos Syria</H6
                       >
                       <p class="text-white" :class="p2 ? 'truncate' : ''">
-                        I worked with the developer, Hammam Zarifa, to build and
+                        I worked with freelancer developers,  to build and
                         modify a number of large and small projects and add
                         creative touches to produce clean projects in terms of
                         code and add creative touches in terms of work and were

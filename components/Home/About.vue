@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row mt-5">
         <div class="col-md-4">
-          <img src="../../public/img/me.jpg" alt="">
+          <img src="../../public/img/me_3.png" alt="">
         </div>
         <div class="col-1"></div>
         <div class="col-md-7">
@@ -16,7 +16,9 @@
           <span ><span class="fw-bolder"> My Github Link :</span> <a target="_blank" href="https://github.com/alaamhna3354">https://github.com/alaamhna3354</a></span>
           <br>
           <br>
-           <a href="../../public/file/Cv-Alaa-Mhna.pdf" title="CV" download> <Button :content="`Download CV`" /></a>
+           <a href="../../public/file/CV.pdf" title="CV" download="CV.pdf">
+            <Button :content="`Download CV`"  />
+          </a>
         </div>
       </div>
     </div>
