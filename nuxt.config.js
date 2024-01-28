@@ -39,11 +39,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: "@/plugins/vue-awesome-swiper", mode: "client" },
-    { src: "~/plugins/lightbox.js", mode: "client" },
-    { src: "~/plugins/aos.client.js", mode: "client" },
-    { src: "~/plugins/vue-i18n.js" },
-    "~/plugins/axios",
   ],
  axios: {
     // baseURL: "https://admin.isystems.site/", 
@@ -75,14 +70,9 @@ export default {
   //fontawesome end
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // Simple usage
-    "cookie-universal-nuxt",
     // With options
-    "@nuxtjs/axios",
-    ["cookie-universal-nuxt", { alias: "cookiz" }],
   ],
   router: {
-    middleware: ["i18n"],
     // Run the middleware/user-agent.js on every page
     //middleware: 'check-token'
   },

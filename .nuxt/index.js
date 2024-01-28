@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+
 import Meta from 'vue-meta'
 import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
@@ -9,19 +9,11 @@ import NuxtError from './components/nuxt-error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
-import { createStore } from './store.js'
 
 /* Plugins */
 
 import nuxt_plugin_plugin_23b368ce from 'nuxt_plugin_plugin_23b368ce' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_axios_64d1bc1e from 'nuxt_plugin_axios_64d1bc1e' // Source: .\\axios.js (mode: 'all')
-import nuxt_plugin_cookieuniversalnuxt_0a18bf99 from 'nuxt_plugin_cookieuniversalnuxt_0a18bf99' // Source: .\\cookie-universal-nuxt.js (mode: 'all')
 import nuxt_plugin_fontawesome_66edfc73 from 'nuxt_plugin_fontawesome_66edfc73' // Source: .\\fontawesome.js (mode: 'all')
-import nuxt_plugin_vueawesomeswiper_0f4ed586 from 'nuxt_plugin_vueawesomeswiper_0f4ed586' // Source: ..\\plugins\\vue-awesome-swiper (mode: 'client')
-import nuxt_plugin_lightbox_449b2fac from 'nuxt_plugin_lightbox_449b2fac' // Source: ..\\plugins\\lightbox.js (mode: 'client')
-import nuxt_plugin_aosclient_11b8a426 from 'nuxt_plugin_aosclient_11b8a426' // Source: ..\\plugins\\aos.client.js (mode: 'client')
-import nuxt_plugin_vuei18n_5a00aec8 from 'nuxt_plugin_vuei18n_5a00aec8' // Source: ..\\plugins\\vue-i18n.js (mode: 'all')
-import nuxt_plugin_axios_3566aa80 from 'nuxt_plugin_axios_3566aa80' // Source: ..\\plugins\\axios (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -63,23 +55,8 @@ Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
-const originalRegisterModule = Vuex.Store.prototype.registerModule
-
-function registerModule (path, rawModule, options = {}) {
-  const preserveState = process.client && (
-    Array.isArray(path)
-      ? !!path.reduce((namespacedState, path) => namespacedState && namespacedState[path], this.state)
-      : path in this.state
-  )
-  return originalRegisterModule.call(this, path, rawModule, { preserveState, ...options })
-}
-
 async function createApp(ssrContext, config = {}) {
   const router = await createRouter(ssrContext, config)
-
-  const store = createStore(ssrContext)
-  // Add this.$router into store actions/mutations
-  store.$router = router
 
   // Create Root instance
 
@@ -88,7 +65,6 @@ async function createApp(ssrContext, config = {}) {
   const app = {
     head: {"title":"Portfolio","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Portfolio Alaa Mhna"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffav.jpeg"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.0.2\u002Fdist\u002Fcss\u002Fbootstrap.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Fstackpath.bootstrapcdn.com\u002Ffont-awesome\u002F5.15.3\u002Fcss\u002Ffont-awesome.min.css"}],"script":[{"src":"https:\u002F\u002Fajax.googleapis.com\u002Fajax\u002Flibs\u002Fjquery\u002F3.6.0\u002Fjquery.min.js"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.0.2\u002Fdist\u002Fjs\u002Fbootstrap.bundle.min.js"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fjquery.ripples@0.6.3\u002Fdist\u002Fjquery.ripples.min.js"}],"style":[]},
 
-    store,
     router,
     nuxt: {
       defaultTransition,
@@ -133,9 +109,6 @@ async function createApp(ssrContext, config = {}) {
     ...App
   }
 
-  // Make app available into store via this.app
-  store.app = app
-
   const next = ssrContext ? ssrContext.next : location => app.router.push(location)
   // Resolve route
   let route
@@ -148,7 +121,6 @@ async function createApp(ssrContext, config = {}) {
 
   // Set context to app.context
   await setContext(app, {
-    store,
     route,
     next,
     error: app.nuxt.error.bind(app),
@@ -175,9 +147,6 @@ async function createApp(ssrContext, config = {}) {
       app.context[key] = value
     }
 
-    // Add into store
-    store[key] = app[key]
-
     // Check if plugin not already installed
     const installKey = '__nuxt_' + key + '_installed__'
     if (Vue[installKey]) {
@@ -199,13 +168,6 @@ async function createApp(ssrContext, config = {}) {
   // Inject runtime config as $config
   inject('config', config)
 
-  if (process.client) {
-    // Replace store state before plugins execution
-    if (window.__NUXT__ && window.__NUXT__.state) {
-      store.replaceState(window.__NUXT__.state)
-    }
-  }
-
   // Add enablePreview(previewData = {}) in context for plugins
   if (process.static && process.client) {
     app.context.enablePreview = function (previewData = {}) {
@@ -219,36 +181,8 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_23b368ce(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_64d1bc1e === 'function') {
-    await nuxt_plugin_axios_64d1bc1e(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_cookieuniversalnuxt_0a18bf99 === 'function') {
-    await nuxt_plugin_cookieuniversalnuxt_0a18bf99(app.context, inject)
-  }
-
   if (typeof nuxt_plugin_fontawesome_66edfc73 === 'function') {
     await nuxt_plugin_fontawesome_66edfc73(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_vueawesomeswiper_0f4ed586 === 'function') {
-    await nuxt_plugin_vueawesomeswiper_0f4ed586(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_lightbox_449b2fac === 'function') {
-    await nuxt_plugin_lightbox_449b2fac(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_aosclient_11b8a426 === 'function') {
-    await nuxt_plugin_aosclient_11b8a426(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_vuei18n_5a00aec8 === 'function') {
-    await nuxt_plugin_vuei18n_5a00aec8(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_axios_3566aa80 === 'function') {
-    await nuxt_plugin_axios_3566aa80(app.context, inject)
   }
 
   // Lock enablePreview in context
@@ -287,7 +221,6 @@ async function createApp(ssrContext, config = {}) {
   })
 
   return {
-    store,
     app,
     router
   }

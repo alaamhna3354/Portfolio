@@ -20,14 +20,7 @@ export default {
   },
    head() {
     return {
-      title:
-        this.$i18n.locale === "ar"
-          ? "Portfolio"
-          : "Portfolio",
-      htmlAttrs: {
-        lang: this.$i18n.locale,
-        dir: this.$i18n.locale === "ar" ? "rtl" : "ltr",
-      },
+      title:"Portfolio",
     };
   },
 };

@@ -213,7 +213,7 @@ export default {
   overflow: hidden;
   ul {
     border-left: 1px solid #fff;
-    padding-inline-start: 20px;
+    padding-left: 20px;
     li {
       position: relative;
       &::after {
