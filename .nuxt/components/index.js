@@ -1,16 +1,16 @@
-export { default as Button } from '../..\\components\\global\\Button.vue'
-export { default as Title } from '../..\\components\\global\\Title.vue'
-export { default as CommonFooter } from '../..\\components\\Common\\Footer.vue'
-export { default as CommonHeader } from '../..\\components\\Common\\Header.vue'
-export { default as HomeAbout } from '../..\\components\\Home\\About.vue'
-export { default as HomeBlur } from '../..\\components\\Home\\Blur.vue'
-export { default as HomeContact } from '../..\\components\\Home\\Contact.vue'
-export { default as Home } from '../..\\components\\Home\\Home.vue'
-export { default as HomeMyInfo } from '../..\\components\\Home\\MyInfo.vue'
-export { default as HomeProjects } from '../..\\components\\Home\\Projects.vue'
-export { default as HomeResume } from '../..\\components\\Home\\Resume.vue'
-export { default as HomeServices } from '../..\\components\\Home\\Services.vue'
-export { default as LoaderLoading } from '../..\\components\\Loader\\loading.vue'
+export const Button = () => import('../..\\components\\global\\Button.vue' /* webpackChunkName: "components/button" */).then(c => wrapFunctional(c.default || c))
+export const Title = () => import('../..\\components\\global\\Title.vue' /* webpackChunkName: "components/title" */).then(c => wrapFunctional(c.default || c))
+export const CommonFooter = () => import('../..\\components\\Common\\Footer.vue' /* webpackChunkName: "components/common-footer" */).then(c => wrapFunctional(c.default || c))
+export const CommonHeader = () => import('../..\\components\\Common\\Header.vue' /* webpackChunkName: "components/common-header" */).then(c => wrapFunctional(c.default || c))
+export const LoaderLoading = () => import('../..\\components\\Loader\\loading.vue' /* webpackChunkName: "components/loader-loading" */).then(c => wrapFunctional(c.default || c))
+export const HomeAbout = () => import('../..\\components\\Home\\About.vue' /* webpackChunkName: "components/home-about" */).then(c => wrapFunctional(c.default || c))
+export const HomeBlur = () => import('../..\\components\\Home\\Blur.vue' /* webpackChunkName: "components/home-blur" */).then(c => wrapFunctional(c.default || c))
+export const HomeContact = () => import('../..\\components\\Home\\Contact.vue' /* webpackChunkName: "components/home-contact" */).then(c => wrapFunctional(c.default || c))
+export const Home = () => import('../..\\components\\Home\\Home.vue' /* webpackChunkName: "components/home" */).then(c => wrapFunctional(c.default || c))
+export const HomeMyInfo = () => import('../..\\components\\Home\\MyInfo.vue' /* webpackChunkName: "components/home-my-info" */).then(c => wrapFunctional(c.default || c))
+export const HomeProjects = () => import('../..\\components\\Home\\Projects.vue' /* webpackChunkName: "components/home-projects" */).then(c => wrapFunctional(c.default || c))
+export const HomeResume = () => import('../..\\components\\Home\\Resume.vue' /* webpackChunkName: "components/home-resume" */).then(c => wrapFunctional(c.default || c))
+export const HomeServices = () => import('../..\\components\\Home\\Services.vue' /* webpackChunkName: "components/home-services" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

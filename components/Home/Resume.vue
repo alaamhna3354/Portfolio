@@ -210,6 +210,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../public/scss/variables.scss";
 #Resume {
+  overflow: hidden;
   ul {
     border-left: 1px solid #fff;
     padding-inline-start: 20px;

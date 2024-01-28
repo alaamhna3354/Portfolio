@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row mt-5">
         <div class="col-md-4">
-          <img src="../../public/img/me_3.png" alt="">
+          <img src="../../public/img/me_2.webp" alt="">
         </div>
         <div class="col-1"></div>
         <div class="col-md-7">

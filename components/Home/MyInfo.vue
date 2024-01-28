@@ -1,8 +1,8 @@
 <template>
-  <main class="p-0" >
+  <main class="p-0" style="overflow: hidden;">
      <div class="my-info">
       <div class="pic">
-        <img src="../../public/img/me_4.png" alt="">
+        <img src="../../public/img/me_1.webp" alt="">
       </div>
      <div>
       <h1 class="ml15">
@@ -133,7 +133,7 @@ anime.timeline({loop: false})
   place-content: center;
     }
   overflow: hidden;
-  background-image: url(../../public/img/turquoise.png);
+  background-image: url(../../public/img/turquoise.jpg);
   background-size: cover;
   *{
     text-align: center !important;
@@ -167,7 +167,7 @@ anime.timeline({loop: false})
 .ml15 .word {
   display: inline-block;
   line-height: 1em;
-  color: $secondary-color;
+  color: #fff;
 }
 </style>
 
