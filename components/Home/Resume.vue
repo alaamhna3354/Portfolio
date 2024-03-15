@@ -1,6 +1,6 @@
 <template>
   <div id="Resume">
-    <Title :title1="`My`" :title2="`Resume`" />
+    <Title data-aos="fade-down" :title1="`My`" :title2="`Resume`" />
     <div class="slider">
       <div class="swiper-container swiper-container2">
         <div class="swiper-wrapper">

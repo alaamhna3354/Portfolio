@@ -1,5 +1,5 @@
 <template>
-  <main class="main-body p-0" id="ripple">
+  <main class="main-body p-0">
     <Blur :width="`100%`" :height="`20px`" :top="'-5px'" />
     <Blur :width="`100%`" :height="`10px`" :bottom="'-5px'" />
     <Blur :height="`100%`" :width="`10px`" :left="'0'" />
@@ -53,12 +53,6 @@ export default {
   methods: {},
   computed: {},
   mounted() {
-    const el = $("#ripple");
-  el.ripples({
-    resolution: 512,
-    dropRadius: 20,
-    perturbance: 0.01,
-  });
   },
 };
 </script>

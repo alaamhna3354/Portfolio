@@ -1,15 +1,15 @@
 <template>
   <main class="p-0" style="overflow: hidden;">
      <div class="my-info">
-      <div class="pic">
+      <div class="pic" data-aos="fade-up">
         <img src="../../public/img/me_1.webp" alt="">
       </div>
      <div>
-      <h1 class="ml15">
+      <h1 class="ml15" data-aos="fade-down">
         <span class="word">Alaa</span>
         <span class="word">Mhna</span>
       </h1>
-      <h3 class="mt-3 ml2">A Creative Freelancer & Frontend Developer</h3>
+      <h3 class="mt-3 ml2" data-aos="fade-up">A Creative Freelancer & Frontend Developer</h3>
      </div>
     </div>
   </main>

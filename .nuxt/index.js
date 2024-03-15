@@ -12,8 +12,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_23b368ce from 'nuxt_plugin_plugin_23b368ce' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_fontawesome_66edfc73 from 'nuxt_plugin_fontawesome_66edfc73' // Source: .\\fontawesome.js (mode: 'all')
+import nuxt_plugin_plugin_6d63ee50 from 'nuxt_plugin_plugin_6d63ee50' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_fontawesome_6a6d6916 from 'nuxt_plugin_fontawesome_6a6d6916' // Source: .\\fontawesome.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -63,7 +63,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Portfolio","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Portfolio Alaa Mhna"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffav.jpeg"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.0.2\u002Fdist\u002Fcss\u002Fbootstrap.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Fstackpath.bootstrapcdn.com\u002Ffont-awesome\u002F5.15.3\u002Fcss\u002Ffont-awesome.min.css"}],"script":[{"src":"https:\u002F\u002Fajax.googleapis.com\u002Fajax\u002Flibs\u002Fjquery\u002F3.6.0\u002Fjquery.min.js"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.0.2\u002Fdist\u002Fjs\u002Fbootstrap.bundle.min.js"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fjquery.ripples@0.6.3\u002Fdist\u002Fjquery.ripples.min.js"}],"style":[]},
+    head: {"title":"Portfolio","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Portfolio Alaa Mhna"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffav.jpeg"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.0.2\u002Fdist\u002Fcss\u002Fbootstrap.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Fstackpath.bootstrapcdn.com\u002Ffont-awesome\u002F5.15.3\u002Fcss\u002Ffont-awesome.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Funpkg.com\u002Faos@2.3.1\u002Fdist\u002Faos.css"}],"script":[{"src":"https:\u002F\u002Fajax.googleapis.com\u002Fajax\u002Flibs\u002Fjquery\u002F3.6.0\u002Fjquery.min.js"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.0.2\u002Fdist\u002Fjs\u002Fbootstrap.bundle.min.js"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fjquery.ripples@0.6.3\u002Fdist\u002Fjquery.ripples.min.js"},{"src":"https:\u002F\u002Funpkg.com\u002Faos@2.3.1\u002Fdist\u002Faos.js"}],"style":[]},
 
     router,
     nuxt: {
@@ -177,12 +177,12 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_23b368ce === 'function') {
-    await nuxt_plugin_plugin_23b368ce(app.context, inject)
+  if (typeof nuxt_plugin_plugin_6d63ee50 === 'function') {
+    await nuxt_plugin_plugin_6d63ee50(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_fontawesome_66edfc73 === 'function') {
-    await nuxt_plugin_fontawesome_66edfc73(app.context, inject)
+  if (typeof nuxt_plugin_fontawesome_6a6d6916 === 'function') {
+    await nuxt_plugin_fontawesome_6a6d6916(app.context, inject)
   }
 
   // Lock enablePreview in context

@@ -24,7 +24,9 @@ export default {
   created() {
     setTimeout(() => {
      this.loading =false;
-      
+     AOS.init({
+      duration: 1000
+     });
     }, 2500);
     
   },

@@ -21,27 +21,13 @@
 // }
 @import "./variables.scss";
 // container-fluid
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Amiri:ital@1&family=Caveat:wght@700&family=Courgette&family=Dancing+Script:wght@700&family=Inter:wght@200&family=Playfair+Display&family=Tajawal&family=Tinos&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Madimi+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 * {
-  font-family: 'Alegreya', serif;
-
-  font-family: 'Amiri', serif;
-
-  font-family: 'Caveat', cursive;
-
-  font-family: 'Courgette', cursive;
-
-  font-family: 'Dancing Script', cursive;
-
-  font-family: 'Inter', sans-serif;
-
-  font-family: 'Playfair Display', serif;
-
-  font-family: 'Tajawal', sans-serif;
-
-  font-family: 'Tinos', serif;
+  font-family: "Merriweather", serif;
   margin: 0;
   padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color:$secondary-color #0e262d;
 }
 html {
   scroll-behavior: smooth;

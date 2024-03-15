@@ -1,14 +1,14 @@
 <template>
   <main id="About">
        <div class="blur"></div>
-    <Title :title1="`About`" :title2="`Me`" />
+    <Title data-aos="fade-down" :title1="`About`" :title2="`Me`" />
     <div class="container">
       <div class="row mt-5">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up-right">
           <img src="../../public/img/me_2.webp" alt="">
         </div>
         <div class="col-1"></div>
-        <div class="col-md-7">
+        <div class="col-md-7" data-aos="fade-up-left">
           <H3 class="hello mt-3">Hello I am <span>Alaa Mhna</span></H3>
           <br>
           <p>I am a dedicated front-end developer of websites, and I love my work. I have the ability to design and transform designs into a compatible, clean environment in terms of code and consistent on all sizes of devices and mobiles, in addition to solving all problems that hinder work. I also have the ability to work and communicate very well with co-workers in order to invest time and effort and improve the rate of work productivity.</p>
@@ -16,9 +16,9 @@
           <span ><span class="fw-bolder"> My Github Link :</span> <a target="_blank" href="https://github.com/alaamhna3354">https://github.com/alaamhna3354</a></span>
           <br>
           <br>
-           <a href="../../public/file/CV.pdf" title="CV" download="CV.pdf">
+           <!-- <a href="../../public/file/CV.pdf" title="CV" download="CV.pdf">
             <Button :content="`Download CV`"  />
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -33,6 +33,8 @@ export default {
   name: "Services",
   components: {
     Title,Button
+  },
+  methods: {
   },
 };
 </script>

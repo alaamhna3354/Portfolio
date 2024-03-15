@@ -1,10 +1,10 @@
 <template>
   <main id="Services" class="mt-5">
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-    <Title :title1="`My`" :title2="`Services`" />
+    <Title data-aos="fade-down" :title1="`My`" :title2="`Services`" />
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-12 item">
+        <div class="col-md-4 col-12 item" data-aos="fade-down-right">
         <lord-icon
             src="https://cdn.lordicon.com/myroguwc.json"
             trigger="hover"
@@ -14,7 +14,7 @@
         </lord-icon>
           <h3 class="text-white">Responsive Design</h3>
         </div>
-        <div class="col-md-4 col-12 item">
+        <div class="col-md-4 col-12 item" data-aos="fade-down">
           <lord-icon
             src="https://cdn.lordicon.com/meqqbzid.json"
             trigger="hover"
@@ -25,7 +25,7 @@
           </lord-icon>
           <h3 class="text-white">Clean Code</h3>
         </div>
-        <div class="col-md-4 col-12 item">
+        <div class="col-md-4 col-12 item" data-aos="fade-down-left">
           <lord-icon
             src="https://cdn.lordicon.com/cllunfud.json"
             trigger="hover"
@@ -36,7 +36,7 @@
           </lord-icon>
           <h3 class="text-white">Competitive Prices</h3>
         </div>
-        <div class="col-md-4 col-12 item">
+        <div class="col-md-4 col-12 item" data-aos="fade-up-right">
           <lord-icon
             src="https://cdn.lordicon.com/nrzqxhfu.json"
             trigger="hover"
@@ -47,7 +47,7 @@
           </lord-icon>
           <h3 class="text-white">High Security</h3>
         </div>
-        <div class="col-md-4 col-12 item">
+        <div class="col-md-4 col-12 item" data-aos="fade-up">
           <lord-icon
             src="https://cdn.lordicon.com/dmonnrsh.json"
             trigger="hover"
@@ -58,7 +58,7 @@
           </lord-icon>
           <h3 class="text-white">Customer Service</h3>
         </div>
-        <div class="col-md-4 col-12 item">
+        <div class="col-md-4 col-12 item" data-aos="fade-up-left">
           <lord-icon
               src="https://cdn.lordicon.com/osbjlbsb.json"
               trigger="hover"

@@ -7,11 +7,11 @@
       </p>
       <hr />
     </div>
-    <Title :title1="`Contact`" :title2="`Me`" />
+    <Title data-aos="fade-down" :title1="`Contact`" :title2="`Me`" />
     <div class="container">
       <form ref="form" @submit.prevent="sendEmail">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6" data-aos="flip-up">
             <input
               placeholder="Your Name"
               type="text"
@@ -21,7 +21,7 @@
               required
             />
           </div>
-          <div class="col-6">
+          <div class="col-6" data-aos="flip-up">
             <input
               placeholder="Your Email"
               type="text"
@@ -31,7 +31,7 @@
               required
             />
           </div>
-          <div class="col-12 mt-3">
+          <div class="col-12 mt-3" data-aos="flip-up">
             <textarea
               name="message"
               id="message"

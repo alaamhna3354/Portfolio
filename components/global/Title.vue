@@ -2,6 +2,7 @@
   <main class="mt-5">
      <div class="title"> 
        <h1 class="first-word">{{title1}}</h1>
+       &nbsp;&nbsp;&nbsp;
        <h1 class="sec-word">{{title2}}</h1>
      </div>
   </main>

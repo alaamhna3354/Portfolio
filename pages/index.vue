@@ -10,6 +10,8 @@ export default {
   components: {
     Home,
   },
+  mounted(){
+   
+  }
 };
 </script>
-<style scoped></style>

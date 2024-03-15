@@ -1,44 +1,44 @@
 <template>
   <main id="Projects" class="mt-5">
-    <Title :title1="`My`" :title2="`Projects`" />
+    <Title data-aos="fade-down" :title1="`My`" :title2="`Projects`" />
     <div class="container">
       <div class="row mt-5">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="fade-down-right" data-aos-delay="500">
           <a target="_blank" href="https://isystems.site/">
             <div class="item">
               <img src="../../public/img/iSystems.png" alt="" />
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="fade-down" data-aos-delay="1000">
           <a target="_blank" href="https://acacia-project.netlify.app/">
             <div class="item">
               <img src="../../public/img/Acacia-Home.png" alt="" />
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="fade-down-left" data-aos-delay="1500">
           <a target="_blank" href="https://academian.co.uk/">
             <div class="item">
               <img src="../../public/img/Home-Academian.png" alt="" />
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="fade-up-right" data-aos-delay="500">
           <a target="_blank" href="https://t-coda.com/">
             <div class="item">
               <img src="../../public/img/E-Dalily.png" alt="" />
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="1000">
           <a target="_blank" href="https://market-syria.com/">
             <div class="item">
               <img src="../../public/img/Syria-Market-Home.png" alt="" />
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="fade-up-left" data-aos-delay="1500">
           <a target="_blank" href="https://sssav.net/">
             <div class="item">
               <img src="../../public/img/sssav.png" alt="" />

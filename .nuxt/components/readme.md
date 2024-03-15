@@ -10,6 +10,7 @@ You can directly use them in pages and other components without the need to impo
 - `<Title>` | `<title>` (components/global/Title.vue)
 - `<CommonFooter>` | `<common-footer>` (components/Common/Footer.vue)
 - `<CommonHeader>` | `<common-header>` (components/Common/Header.vue)
+- `<LoaderLoading>` | `<loader-loading>` (components/Loader/loading.vue)
 - `<HomeAbout>` | `<home-about>` (components/Home/About.vue)
 - `<HomeBlur>` | `<home-blur>` (components/Home/Blur.vue)
 - `<HomeContact>` | `<home-contact>` (components/Home/Contact.vue)
@@ -18,4 +19,3 @@ You can directly use them in pages and other components without the need to impo
 - `<HomeProjects>` | `<home-projects>` (components/Home/Projects.vue)
 - `<HomeResume>` | `<home-resume>` (components/Home/Resume.vue)
 - `<HomeServices>` | `<home-services>` (components/Home/Services.vue)
-- `<LoaderLoading>` | `<loader-loading>` (components/Loader/loading.vue)
