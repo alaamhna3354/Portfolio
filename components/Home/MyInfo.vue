@@ -133,7 +133,7 @@ anime.timeline({loop: false})
   place-content: center;
     }
   overflow: hidden;
-  background-image: url(../../public/img/turquoise.jpg);
+  background-image: url(../../public/img/turquoise.jpeg);
   background-size: cover;
   *{
     text-align: center !important;

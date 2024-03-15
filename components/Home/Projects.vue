@@ -6,42 +6,42 @@
         <div class="col-md-4 mb-3" data-aos="fade-down-right" data-aos-delay="500">
           <a target="_blank" href="https://isystems.site/">
             <div class="item">
-              <img src="../../public/img/iSystems.png" alt="" />
+              <img src="../../public/img/iSystems.jpg" alt="" />
             </div>
           </a>
         </div>
         <div class="col-md-4 mb-3" data-aos="fade-down" data-aos-delay="1000">
           <a target="_blank" href="https://acacia-project.netlify.app/">
             <div class="item">
-              <img src="../../public/img/Acacia-Home.png" alt="" />
+              <img src="../../public/img/Acacia-Home.jpg" alt="" />
             </div>
           </a>
         </div>
         <div class="col-md-4 mb-3" data-aos="fade-down-left" data-aos-delay="1500">
           <a target="_blank" href="https://academian.co.uk/">
             <div class="item">
-              <img src="../../public/img/Home-Academian.png" alt="" />
+              <img src="../../public/img/Home-Academian.jpg" alt="" />
             </div>
           </a>
         </div>
         <div class="col-md-4 mb-3" data-aos="fade-up-right" data-aos-delay="500">
           <a target="_blank" href="https://t-coda.com/">
             <div class="item">
-              <img src="../../public/img/E-Dalily.png" alt="" />
+              <img src="../../public/img/E-Dalily.jpg" alt="" />
             </div>
           </a>
         </div>
         <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="1000">
           <a target="_blank" href="https://market-syria.com/">
             <div class="item">
-              <img src="../../public/img/Syria-Market-Home.png" alt="" />
+              <img src="../../public/img/Syria-Market-Home.jpg" alt="" />
             </div>
           </a>
         </div>
         <div class="col-md-4 mb-3" data-aos="fade-up-left" data-aos-delay="1500">
           <a target="_blank" href="https://sssav.net/">
             <div class="item">
-              <img src="../../public/img/sssav.png" alt="" />
+              <img src="../../public/img/sssav.jpg" alt="" />
             </div>
           </a>
         </div>
