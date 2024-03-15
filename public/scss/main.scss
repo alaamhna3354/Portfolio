@@ -31,10 +31,12 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body{
   background-color: $main-color;
   // overflow-x: hidden;
+  overflow-x: hidden;
 }
 ul{
   padding: 0;

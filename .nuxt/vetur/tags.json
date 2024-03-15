@@ -11,9 +11,6 @@
   "CommonHeader": {
     "description": "Auto imported from components/Common/Header.vue"
   },
-  "LoaderLoading": {
-    "description": "Auto imported from components/Loader/loading.vue"
-  },
   "HomeAbout": {
     "description": "Auto imported from components/Home/About.vue"
   },
@@ -37,5 +34,8 @@
   },
   "HomeServices": {
     "description": "Auto imported from components/Home/Services.vue"
+  },
+  "LoaderLoading": {
+    "description": "Auto imported from components/Loader/loading.vue"
   }
 }
