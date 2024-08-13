@@ -12,7 +12,7 @@
                   <h5>EXPERIENCE</h5>
                   <br />
                   <H3
-                    >More than <span style="font-weight: bold">4</span> years
+                    >More than <span style="font-weight: bold">{{ YearsExperience }}</span> years
                     experience as a <span>Developer</span></H3
                   >
                   <br />
@@ -26,14 +26,13 @@
                   <ul>
                     <li class="mb-5">
                       <h4 class="text-white op">
-                        Frontend Web DeveloperFrontend Web Developer
+                        Frontend Web Developer
                       </h4>
                       <H5 class="text-white op"
                         >Al-Balael · Full-timeAl-Balael</H5
                       >
                       <H6 class="text-white op"
-                        >Full-time Jan 2019 - Feb 2022 · 3 yrs 2 mosJan 2019 -
-                        Feb 2022 · 3 yrs 2 mos Syria</H6
+                        >Jan 2019 - Feb 2022 · 3 yrs 2 mos</H6
                       >
                       <p class="text-white" :class="p1 ? 'truncate' : ''">
                         I worked for Al-Badael Company to develop and build a
@@ -62,11 +61,10 @@
                     </li>
                     <li class="mb-5">
                       <h4 class="text-white op">
-                        Frontend Web DeveloperFrontend Web Developer
+                        Frontend Web Developer
                       </h4>
                       <H6 class="text-white op">
-                        Feb 2022 - May 2023 · 1 yr 4 mosFeb 2022 - May 2023 · 1
-                        yr 4 mos Syria</H6
+                        Feb 2022 - May 2023 · 1 yr 4 mos</H6
                       >
                       <p class="text-white" :class="p2 ? 'truncate' : ''">
                         I worked with freelancer developers,  to build and
@@ -90,10 +88,10 @@
                     </li>
                     <li class="mb-5">
                       <h4 class="text-white op">
-                        Frontend Web DeveloperFrontend Web Developer
+                        Frontend Web Developer
                       </h4>
                       <H5 class="text-white op">FSIT · Full-time</H5>
-                      <H6 class="text-white op">Apr 2023 - Present · 3 mos</H6>
+                      <H6 class="text-white op">Apr 2023 - Jul 2024 · 1 yr 4 mos</H6>
                       <p class="text-white" :class="p3 ? 'truncate' : ''">
                         I worked for Al-Badael Company to develop and build a
                         number of commercial projects and platforms, and I had a
@@ -105,6 +103,28 @@
                         <br />
                         I developed many websites for clients using html,
                         css,scss, js, jquery, bootstap, Nuxt.js framwork .
+                      </p>
+                      <span
+                        v-if="p3"
+                        class="text-white see-more"
+                        @click="p3 = false"
+                        >See More</span
+                      >
+                      <span
+                        v-else
+                        class="text-white see-more"
+                        @click="p3 = true"
+                        >See Less</span
+                      >
+                    </li>
+                    <li class="mb-5">
+                      <h4 class="text-white op">
+                        Frontend Web Developer
+                      </h4>
+                      <H5 class="text-white op">Etmaam · Full-time</H5>
+                      <H6 class="text-white op"> Apr 2024 - Present </H6>
+                      <p class="text-white" :class="p3 ? 'truncate' : ''">
+                        I worked on improving the performance and design of several websites ( php scripts ) And also building a new platform for the company that provides all its services by vue.js,That's where I built Spa project ,provide the platform with new features in terms of design and performance
                       </p>
                       <span
                         v-if="p3"
@@ -185,9 +205,16 @@ export default {
       p1: true,
       p2: true,
       p3: true,
+      YearsExperience :5,
     };
   },
   mounted() {
+  const startDate = new Date('2020-01-01');
+  const currentDate = new Date();
+  const timeDiff = Math.abs(currentDate.getTime() - startDate.getTime());
+  const yearsDiff = Math.ceil(timeDiff / (1000 * 3600 * 24 * 365.25));
+  this.YearsExperience = yearsDiff;
+  
     const swiper = new Swiper(".swiper-container2", {
       effect: 'flip', // cube coverflow cards creative flip
       autoplay: {
